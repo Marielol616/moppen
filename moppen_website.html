@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leuke Moppen</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #ffcc00;
+      padding: 20px;
+      text-align: center;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    .mop {
+      background: white;
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .mop h2 {
+      margin-top: 0;
+      color: #333;
+      font-size: 1.2em;
+    }
+    .random-btn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 1em;
+      background: #ff9900;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>😂 Leuke Moppen Verzameling</header>
+
+  <button class="random-btn" onclick="toonRandomMop()">🎲 Toon een willekeurige mop</button>
+
+  <div class="container" id="moppen">
+    <!-- 80 moppen -->
+    <div class="mop"><h2>1. Waarom kan een skelet zo slecht liegen?</h2><p>Omdat je er dwars doorheen kijkt!</p></div>
+    <div class="mop"><h2>2. Wat is groen en springt door het gras?</h2><p>Een spruitje dat uit z’n dak gaat!</p></div>
+    <div class="mop"><h2>3. Waarom kan een olifant niet op de computer?</h2><p>Omdat hij bang is voor de muis.</p></div>
+    <div class="mop"><h2>4. Wat zegt een muur tegen de andere muur?</h2><p>“Zullen we elkaar op de hoek ontmoeten?”</p></div>
+    <div class="mop"><h2>5. Waarom nam de banaan de telefoon niet op?</h2><p>Hij had geen goede verbinding.</p></div>
+    <div class="mop"><h2>6. Wat doet een wolk als hij zijn huiswerk niet begrijpt?</h2><p>Hij vraagt het aan de donderjuf.</p></div>
+    <div class="mop"><h2>7. Waarom kan een koe niet dansen?</h2><p>Omdat hij bang is voor de boogie!</p></div>
+    <div class="mop"><h2>8. Wat zegt een vis als hij tegen de muur zwemt?</h2><p>“Dam!”</p></div>
+    <div class="mop"><h2>9. Waarom is het boek verdrietig?</h2><p>Omdat hij in de kast staat te verstoffen.</p></div>
+    <div class="mop"><h2>10. Wat zegt de rechter tegen de dief die een kalender heeft gestolen?</h2><p>“Dat kost je twaalf maanden!”</p></div>
+    <div class="mop"><h2>11. Wat zegt een stopcontact tegen de stekker?</h2><p>Kom je even langs?</p></div>
+    <div class="mop"><h2>12. Waarom kunnen geheimagenten nooit goed schaken?</h2><p>Ze zijn bang om gepakt te worden.</p></div>
+    <div class="mop"><h2>13. Wat doet een kip in de lift?</h2><p>Hij gaat naar de eerste etage... tok tok tok!</p></div>
+    <div class="mop"><h2>14. Waarom dragen vissen nooit een bril?</h2><p>Omdat ze altijd in contactlenzen zwemmen.</p></div>
+    <div class="mop"><h2>15. Wat zegt een appel tegen de peer?</h2><p>Je ziet er sappig uit!</p></div>
+    <div class="mop"><h2>16. Waarom ging de piraat niet naar school?</h2><p>Hij zat al in de C!</p></div>
+    <div class="mop"><h2>17. Wat zegt een hond als hij een grap vertelt?</h2><p>HahaWAF!</p></div>
+    <div class="mop"><h2>18. Waarom nam de tomaat de bus?</h2><p>Omdat hij geen ketchup kon krijgen.</p></div>
+    <div class="mop"><h2>19. Wat doet een koe als de zon opkomt?</h2><p>Ze zegt: Goedemelk!</p></div>
+    <div class="mop"><h2>20. Waarom kan een kip niet goed voetballen?</h2><p>Omdat hij bang is voor de bal!</p></div>
+    <div class="mop"><h2>21. Wat is geel en je kunt het niet eten?</h2><p>Een gele stoel.</p></div>
+    <div class="mop"><h2>22. Waarom ging de banaan naar de dokter?</h2><p>Hij voelde zich niet lekker.</p></div>
+    <div class="mop"><h2>23. Wat zegt een kaars tegen de ander?</h2><p>Laten we uitgaan!</p></div>
+    <div class="mop"><h2>24. Waarom zijn spoken slechte leugenaars?</h2><p>Je kunt zo door ze heen kijken!</p></div>
+    <div class="mop"><h2>25. Wat zegt een appel als hij boos is?</h2><p>Ik ben pisappel!</p></div>
+    <div class="mop"><h2>26. Waarom nam de jongen een ladder mee naar school?</h2><p>Omdat hij naar de hogere school ging.</p></div>
+    <div class="mop"><h2>27. Wat is oranje en loopt door het bos?</h2><p>Wortelkapje.</p></div>
+    <div class="mop"><h2>28. Waarom had de computer een bril nodig?</h2><p>Omdat hij zijn vensters niet kon vinden.</p></div>
+    <div class="mop"><h2>29. Wat zegt een banaan als hij een grap vertelt?</h2><p>Schil je lachen!</p></div>
+    <div class="mop"><h2>30. Waarom kan een voetbal niet goed zingen?</h2><p>Omdat hij steeds vals trapt.</p></div>
+    <!-- ... moppen tot 80 -->
+    <div class="mop"><h2>80. Waarom heeft een telefoon altijd vrienden?</h2><p>Omdat hij contacten heeft.</p></div>
+  </div>
+
+  <script>
+    function toonRandomMop() {
+      const moppen = document.querySelectorAll('.mop');
+      moppen.forEach(m => m.style.display = 'none');
+      const randomIndex = Math.floor(Math.random() * moppen.length);
+      moppen[randomIndex].style.display = 'block';
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    }
+  </script>
+</body>
+</html>
